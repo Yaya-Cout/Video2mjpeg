@@ -1,14 +1,6 @@
 <template>
   <v-layout class="rounded rounded-md border">
-    <v-app-bar title="Video to mjpeg">
-      <v-btn icon @click="theme.cycle()">
-        <v-icon>mdi-theme-light-dark</v-icon>
-        <v-tooltip
-          activator="parent"
-          location="start"
-        >Change theme</v-tooltip>
-      </v-btn>
-    </v-app-bar>
+    <AppBar />
 
     <!-- <v-navigation-drawer>
       <v-list nav>
@@ -32,7 +24,4 @@
 </template>
 
 <script lang="ts" setup>
-  import { useTheme } from 'vuetify'
-
-  const theme = useTheme()
 </script>
